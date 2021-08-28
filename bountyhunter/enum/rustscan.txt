@@ -1,0 +1,50 @@
+[~] Starting Nmap 7.80 ( https://nmap.org ) at 2021-08-27 18:44 UTC
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 18:44
+Completed NSE at 18:44, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 18:44
+Completed NSE at 18:44, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 18:44
+Completed NSE at 18:44, 0.00s elapsed
+Initiating Ping Scan at 18:44
+Scanning 10.10.11.100 [2 ports]
+Completed Ping Scan at 18:44, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 18:44
+Completed Parallel DNS resolution of 1 host. at 18:44, 0.01s elapsed
+DNS resolution of 1 IPs took 0.01s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 18:44
+Scanning 10.10.11.100 [2 ports]
+Discovered open port 80/tcp on 10.10.11.100
+Discovered open port 22/tcp on 10.10.11.100
+Completed Connect Scan at 18:44, 0.01s elapsed (2 total ports)
+Initiating Service scan at 18:44
+Scanning 2 services on 10.10.11.100
+Completed Service scan at 18:44, 6.04s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.11.100.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 18:44
+Completed NSE at 18:44, 0.59s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 18:44
+Completed NSE at 18:44, 0.05s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 18:44
+Completed NSE at 18:44, 0.00s elapsed
+Nmap scan report for 10.10.11.100
+Host is up, received syn-ack (0.011s latency).
+Scanned at 2021-08-27 18:44:32 UTC for 7s
+
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack Apache httpd 2.4.41 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 556F31ACD686989B1AFCF382C05846AA
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Bounty Hunters
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
