@@ -1,0 +1,60 @@
+# Nmap 7.80 scan initiated Fri Sep 10 19:40:31 2021 as: nmap -A -vv -p- -oN nmap.scan 10.10.10.9
+Nmap scan report for 10.10.10.9
+Host is up, received echo-reply ttl 127 (0.012s latency).
+Scanned at 2021-09-10 19:40:32 EDT for 170s
+Not shown: 65532 filtered ports
+Reason: 65532 no-responses
+PORT      STATE SERVICE REASON          VERSION
+80/tcp    open  http    syn-ack ttl 127 Microsoft IIS httpd 7.5
+|_http-favicon: Unknown favicon MD5: CF2445DCB53A031C02F9B57E2199BC03
+|_http-generator: Drupal 7 (http://drupal.org)
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+| http-robots.txt: 36 disallowed entries 
+| /includes/ /misc/ /modules/ /profiles/ /scripts/ 
+| /themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt 
+| /INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt 
+| /LICENSE.txt /MAINTAINERS.txt /update.php /UPGRADE.txt /xmlrpc.php 
+| /admin/ /comment/reply/ /filter/tips/ /node/add/ /search/ 
+| /user/register/ /user/password/ /user/login/ /user/logout/ /?q=admin/ 
+| /?q=comment/reply/ /?q=filter/tips/ /?q=node/add/ /?q=search/ 
+|_/?q=user/password/ /?q=user/register/ /?q=user/login/ /?q=user/logout/
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: Welcome to 10.10.10.9 | 10.10.10.9
+135/tcp   open  msrpc   syn-ack ttl 127 Microsoft Windows RPC
+49154/tcp open  msrpc   syn-ack ttl 127 Microsoft Windows RPC
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone|specialized
+Running (JUST GUESSING): Microsoft Windows 8|Phone|2008|7|8.1|Vista|2012 (92%)
+OS CPE: cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_8.1 cpe:/o:microsoft:windows_vista::- cpe:/o:microsoft:windows_vista::sp1 cpe:/o:microsoft:windows_server_2012:r2
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows 8.1 Update 1 (92%), Microsoft Windows Phone 7.5 or 8.0 (92%), Microsoft Windows 7 or Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 or Windows 8.1 (91%), Microsoft Windows Server 2008 R2 SP1 or Windows 8 (91%), Microsoft Windows 7 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 R2 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1 (91%), Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=9/10%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=613BED9A%P=x86_64-pc-linux-gnu)
+SEQ(SP=107%GCD=1%ISR=10B%TI=I%II=I%SS=S%TS=7)
+OPS(O1=M54DNW8ST11%O2=M54DNW8ST11%O3=M54DNW8NNT11%O4=M54DNW8ST11%O5=M54DNW8ST11%O6=M54DST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%TG=80%W=2000%O=M54DNW8NNS%CC=N%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Uptime guess: 0.007 days (since Fri Sep 10 19:33:41 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 135/tcp)
+HOP RTT      ADDRESS
+1   11.70 ms 10.10.14.1
+2   11.87 ms 10.10.10.9
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 10 19:43:22 2021 -- 1 IP address (1 host up) scanned in 170.49 seconds
