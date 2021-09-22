@@ -1,0 +1,26 @@
+Enterprise Read-only Domain Controllers
+Administrator
+Guest
+krbtgt
+Domain Admins
+Domain Users
+Domain Guests
+Domain Computers
+Domain Controllers
+Cert Publishers
+Schema Admins
+Enterprise Admins
+Group Policy Creator Owners
+Read-only Domain Controllers
+Cloneable Domain Controllers
+Protected Users
+Key Admins
+Enterprise Key Admins
+RAS and IAS Servers
+Allowed RODC Password Replication Group
+Denied RODC Password Replication Group
+DC$
+DnsAdmins
+DnsUpdateProxy
+SVC-Kerb
+SQLServer2005SQLBrowserUser

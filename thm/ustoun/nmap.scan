@@ -1,0 +1,144 @@
+# Nmap 7.91 scan initiated Sun Jul  4 10:08:41 2021 as: nmap -A -p- -vv -oN nmap.scan 10.10.157.84
+Increasing send delay for 10.10.157.84 from 5 to 10 due to 20 out of 66 dropped probes since last increase.
+Nmap scan report for 10.10.157.84
+Host is up, received conn-refused (0.097s latency).
+Scanned at 2021-07-04 10:08:42 EDT for 612s
+Not shown: 65507 closed ports
+Reason: 65507 conn-refused
+PORT      STATE SERVICE            REASON  VERSION
+53/tcp    open  domain             syn-ack Simple DNS Plus
+88/tcp    open  kerberos-sec       syn-ack Microsoft Windows Kerberos (server time: 2021-07-04 14:17:19Z)
+135/tcp   open  msrpc              syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn        syn-ack Microsoft Windows netbios-ssn
+389/tcp   open  ldap               syn-ack Microsoft Windows Active Directory LDAP (Domain: ustoun.local0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?      syn-ack
+464/tcp   open  kpasswd5?          syn-ack
+593/tcp   open  ncacn_http         syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped         syn-ack
+1433/tcp  open  ms-sql-s           syn-ack Microsoft SQL Server 2019 15.00.2000.00; RTM
+| ms-sql-ntlm-info: 
+|   Target_Name: DC01
+|   NetBIOS_Domain_Name: DC01
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: ustoun.local
+|   DNS_Computer_Name: DC.ustoun.local
+|   DNS_Tree_Name: ustoun.local
+|_  Product_Version: 10.0.17763
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-07-04T13:53:28
+| Not valid after:  2051-07-04T13:53:28
+| MD5:   5e2c 6226 da65 5a6c 1e36 547d ce69 bdd2
+| SHA-1: 0048 1b6f ab9d 50a6 2bb7 d3b9 f568 c2ce dd4f 1c97
+| -----BEGIN CERTIFICATE-----
+| MIIDADCCAeigAwIBAgIQbwtPb5gRRodDv+eBi555azANBgkqhkiG9w0BAQsFADA7
+| MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA
+| bABsAGIAYQBjAGswIBcNMjEwNzA0MTM1MzI4WhgPMjA1MTA3MDQxMzUzMjhaMDsx
+| OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs
+| AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL1XYMRB
+| Uk18bIhl8aoiBjQk9KSeJw1Jd/9XOJVcGK0uddluaU7c2l3XdPvo7hzAstnwbxU7
+| N1yr1fk8qrVvsU4KKdxXeD+FphIs3tJSgAqeeacktILIcXSj4LfcvMc9pSqM7ESE
+| ImDfZEG3UFh/6roGBEa1O8FzVuNCaYGHt7cjFR4IYpS0XnuWrvfQmKEhka5PLwe3
+| IHavNTGsJE76zgMvYb2bAeMlP4OyXxyVrkgBSjY74amNz88bnyQ/CEcHad8mf7bs
+| 4cf4G0ZkgBFfHsHbazrRNcttv1Ln07r86YQChkPhm1D/FVydbH0EHSiMIUL1WL9Y
+| FZApN3XQjvvQMU0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAPm9o9+xfV2BeK9i8
+| 15JDT2dqgF9QLCZJrTjM9nI5cE6AHjlnlePbQaPeFeT4VbFKYSUubXzKzbem7ZqH
+| o4/Kopaqrr+/kb+lfGuZY5AAEg+HJCdsw3jtwVsxab60yeZQ5CI4iqhGqh4mQ47c
+| EDFGRsgO1k1cPt+tNmrrGd9uYR8j6OF1uu/GGXp9LBLKHJ4ftWc0lVOf7Xm7Xie7
+| +T9Di/rMuS4e9RYZWHJSyjTf4sl9CnjRexAdWJBGgvSR8QMDK+rjB5lF6lD7/ZaH
+| ubRYUyDxGK/7DO1S8/UvI1sL/bSjqAblGzhZKQMAXUUwB+/yODTnBv8RdG8q7CV4
+| N1Jhsg==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-07-04T14:18:49+00:00; -2s from scanner time.
+3268/tcp  open  ldap               syn-ack Microsoft Windows Active Directory LDAP (Domain: ustoun.local0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped         syn-ack
+3389/tcp  open  ssl/ms-wbt-server? syn-ack
+| rdp-ntlm-info: 
+|   Target_Name: DC01
+|   NetBIOS_Domain_Name: DC01
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: ustoun.local
+|   DNS_Computer_Name: DC.ustoun.local
+|   DNS_Tree_Name: ustoun.local
+|   Product_Version: 10.0.17763
+|_  System_Time: 2021-07-04T14:18:40+00:00
+| ssl-cert: Subject: commonName=DC.ustoun.local
+| Issuer: commonName=DC.ustoun.local
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-07-03T13:46:36
+| Not valid after:  2022-01-02T13:46:36
+| MD5:   1244 2783 ef7f 5c45 43db d2c0 aedb 2461
+| SHA-1: f7b8 6b07 950a ee82 881a 16ae 6842 a7e6 acc1 c317
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQVEYBQ7RdMqVD6AWPSOoBwTANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9EQy51c3RvdW4ubG9jYWwwHhcNMjEwNzAzMTM0NjM2WhcNMjIw
+| MTAyMTM0NjM2WjAaMRgwFgYDVQQDEw9EQy51c3RvdW4ubG9jYWwwggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDKQflvcvSR1PepZ0l2hHcUGyj5ONGdeQLF
+| bDlEK+P1xpyRO0cKA6kcXpRuJy64u8qBccYLX/F38BA0xBPMOfRlS5pAppDmZW2P
+| WCnuX0Yg7z/xizBoSlyQkNqvSTihvXMO/Fd3hfqojPUVKAcOQWORnHg+C+e3+ved
+| CVGEfzlvWX5FhcjXO3yd+ivi8Cbw7pJ2SKlgzkOPqyB6ct+hhs7mwpNKLaqF5tvE
+| DFFiHh5Zrr9kUakUIAHneVqSWWqTZrF2OsfnCiNYwT1ijrjYMphowWmdpHiGJ5ns
+| jBEx52mfhliheWqJx6zUzcUn+3QUzlBZ9qOleMRSrbpc6POHiikZAgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEAiIxUW/PK45Dr0/bRMaM8E8orXQNYBLEjrxTLtS2wKq97Zc3hzy4Bv+v3
+| 7bCr9M3O3mBE7o8MVmZ6oNjUNbokPyt6LewZw8hIUL7ZFeG5TN8SUbJpedSnyBnV
+| P0OBvxWS6MrXFcKpJWWRS16uiVmnRFXGv1kD1JxrxrRkMtzm1D2EZ2m53zTR00LV
+| oHaNrSO/x/4rDM9AIys+ywGbDxOqwJb8QIWxZB1BFPmuFCyxolp/VF0gZoB3OU7G
+| aNWygPUAlBQAHEpfEr4pQPJ+T1wf3sChAFginzVjPfna0M3C2QH9w9DjrgDd/P6r
+| a2gtZ36oFVUfBRbqGt8DcrzcV3FimQ==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-07-04T14:18:48+00:00; -2s from scanner time.
+5985/tcp  open  http               syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf             syn-ack .NET Message Framing
+47001/tcp open  http               syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49665/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49666/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49669/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49670/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49673/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49676/tcp open  ncacn_http         syn-ack Microsoft Windows RPC over HTTP 1.0
+49677/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49681/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49689/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49698/tcp open  msrpc              syn-ack Microsoft Windows RPC
+49790/tcp open  msrpc              syn-ack Microsoft Windows RPC
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -2s
+| ms-sql-info: 
+|   10.10.157.84:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 52088/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 41697/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 16696/udp): CLEAN (Timeout)
+|   Check 4 (port 31283/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2021-07-04T14:18:41
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul  4 10:18:54 2021 -- 1 IP address (1 host up) scanned in 612.25 seconds
