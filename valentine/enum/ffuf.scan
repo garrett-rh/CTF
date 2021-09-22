@@ -1,11 +1,0 @@
-[2K[32m                        [Status: 200, Size: 38, Words: 2, Lines: 2, Duration: 16ms][0m
-[2K[32mindex.php               [Status: 200, Size: 38, Words: 2, Lines: 2, Duration: 1798ms][0m
-[2K[32mindex                   [Status: 200, Size: 38, Words: 2, Lines: 2, Duration: 2558ms][0m
-[2K[34mdev                     [Status: 301, Size: 308, Words: 20, Lines: 10, Duration: 20ms][0m
-[2K[32mencode                  [Status: 200, Size: 554, Words: 73, Lines: 28, Duration: 17ms][0m
-[2K[32mencode.php              [Status: 200, Size: 554, Words: 73, Lines: 28, Duration: 16ms][0m
-[2K[32mdecode                  [Status: 200, Size: 552, Words: 73, Lines: 26, Duration: 13ms][0m
-[2K[32mdecode.php              [Status: 200, Size: 552, Words: 73, Lines: 26, Duration: 12ms][0m
-[2K[32momg                     [Status: 200, Size: 153356, Words: 627, Lines: 620, Duration: 13ms][0m
-[2K[32m                        [Status: 200, Size: 38, Words: 2, Lines: 2, Duration: 13ms][0m
-[2K[33mserver-status           [Status: 403, Size: 292, Words: 21, Lines: 11, Duration: 12ms][0m
