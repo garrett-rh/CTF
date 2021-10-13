@@ -1,0 +1,4 @@
+└─$ impacket-rpcdump @driver.htb | egrep 'MS-RPRN|MS-PAR' > printer_nightmare.is_vuln
+
+Protocol: [MS-PAR]: Print System Asynchronous Remote Protocol 
+Protocol: [MS-RPRN]: Print System Remote Protocol 

